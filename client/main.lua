@@ -46,7 +46,7 @@ end)
 function OpenDrugShop()
 	ESX.UI.Menu.CloseAll()
 	local elements = {}
-	menuOpen = true
+	menuOpen = false
 
 	for k, v in pairs(ESX.GetPlayerData().inventory) do
 		local price = Config.DrugDealerItems[v.name]
